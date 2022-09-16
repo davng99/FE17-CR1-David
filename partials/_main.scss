@@ -13,7 +13,7 @@ main{
     
         .item{
             position: relative;
-            transition: ease-in-out .4s;
+            transition: ease-in-out .3s;
 
             &:hover{
                 transform: scale(1.05);
@@ -35,7 +35,7 @@ main{
                 background-color: rgba(0, 0, 0, 0.555);
 
                 p{
-                    padding: 10px 0;
+                    padding: 5px 0;
                 }
             }
         }
