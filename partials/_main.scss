@@ -1,0 +1,81 @@
+// Main
+    
+main{
+    padding: 50px 20px;
+
+    #grid-container{
+        border: 5px dotted red;
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        gap: 20px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+        .item{
+            position: relative;
+            transition: ease-in-out .4s;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+    
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            .item-text{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: white;
+                text-align: center;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.555);
+
+                p{
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+    // Recipe Of The Month Page
+    #recipe{
+        width: 100%;
+        
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        figure{
+            margin-top: 20px;
+            text-align: center;
+
+            img{ 
+                width: 70%;
+            }
+
+            figcaption{
+                text-align: center;
+                font-style: italic;
+            }
+        }
+
+        ul{
+            border: 1px solid black;
+            padding: 40px;
+            border-radius: 25px;
+            margin: 30px auto;
+            width: 60%;
+
+            li{
+                margin-left: 30px;
+            }
+        }
+    }
+
+}
