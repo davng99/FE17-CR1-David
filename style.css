@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
-header {
-  border: 3px dotted red;
-}
 header .header-top {
   display: flex;
   justify-content: space-between;
@@ -45,7 +42,6 @@ main {
   padding: 50px 20px;
 }
 main #grid-container {
-  border: 5px dotted red;
   display: grid;
   width: 80%;
   margin: 0 auto;
@@ -106,6 +102,12 @@ main #recipe ul {
 main #recipe ul li {
   margin-left: 30px;
 }
+main #recipe ul li p {
+  margin: 5px 0;
+}
+main #recipe ul li p span {
+  font-weight: 700;
+}
 
 footer {
   background-color: black;
@@ -122,6 +124,9 @@ footer .footer-links a {
   text-decoration: none;
   color: white;
   margin: 0 20px;
+}
+footer .footer-links a:hover {
+  color: red;
 }
 footer .footer-icons i {
   color: white;
@@ -141,9 +146,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  body header {
-    border: 4px dotted blue;
-  }
   body header .header-top .icon-left input {
     height: 25px;
     width: 150px;
@@ -156,7 +158,6 @@ body {
     font-size: 14px;
   }
   body main #grid-container {
-    border: 4px dotted blue;
     grid-template-columns: 1fr;
     gap: 10px 10px;
   }
@@ -178,9 +179,6 @@ body {
   }
   body main #recipe ul li {
     margin-left: 30px;
-  }
-  body footer .footer-links {
-    border: 4px dotted blue;
   }
   body footer .footer-links a {
     font-size: 12px;

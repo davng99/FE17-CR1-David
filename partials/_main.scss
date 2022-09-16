@@ -4,7 +4,6 @@ main{
     padding: 50px 20px;
 
     #grid-container{
-        border: 5px dotted red;
         display: grid;
         width: 80%;
         margin: 0 auto;
@@ -74,6 +73,13 @@ main{
 
             li{
                 margin-left: 30px;
+
+                p{
+                    margin: 5px 0;
+                    span{
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

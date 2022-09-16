@@ -1,7 +1,6 @@
 @media screen and (max-width: 480px) {
     body{
         header{
-            border: 4px dotted blue;
     
             .header-top{
                 .icon-left{
@@ -25,7 +24,6 @@
     
         main{
             #grid-container{
-                border: 4px dotted blue;
                 grid-template-columns: 1fr;
                 gap: 10px 10px;
             }
@@ -61,7 +59,6 @@
 
         footer{
             .footer-links{
-                border: 4px dotted blue;
                 a{
                     font-size: 12px;
                 }
