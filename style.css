@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+header {
+  border: 3px dotted red;
+}
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 10px;
+}
+header .header-top img {
+  width: 80px;
+}
+header .header-top .icon-left input {
+  height: 35px;
+  width: 200px;
+  padding: 0 5px;
+  border-radius: 10px;
+  text-align: left;
+}
+header .header-top .icon-left i {
+  margin: 0 10px;
+}
+header .navigation-bar {
+  height: 60px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .navigation-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: ease-in-out 0.4s;
+}
+header .navigation-bar a:hover {
+  font-size: 20px;
+  color: red;
+}
+
+main {
+  padding: 50px 20px;
+}
+main #grid-container {
+  border: 5px dotted red;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+main #grid-container .item {
+  position: relative;
+  transition: ease-in-out 0.4s;
+}
+main #grid-container .item:hover {
+  transform: scale(1.05);
+}
+main #grid-container .item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #grid-container .item .item-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+main #grid-container .item .item-text p {
+  padding: 10px 0;
+}
+main #recipe {
+  width: 100%;
+}
+main #recipe h1 {
+  font-size: 40px;
+  text-align: center;
+}
+main #recipe figure {
+  margin-top: 20px;
+  text-align: center;
+}
+main #recipe figure img {
+  width: 70%;
+}
+main #recipe figure figcaption {
+  text-align: center;
+  font-style: italic;
+}
+main #recipe ul {
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 25px;
+  margin: 30px auto;
+  width: 60%;
+}
+main #recipe ul li {
+  margin-left: 30px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  height: 20vh;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+footer .footer-icons i {
+  color: white;
+  margin: 10px;
+}
+footer p {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  body header {
+    border: 4px dotted blue;
+  }
+  body header .header-top .icon-left input {
+    height: 25px;
+    width: 150px;
+  }
+  body header .navigation-bar a {
+    font-size: 12px;
+    transition: ease-in-out 0.4s;
+  }
+  body header .navigation-bar a:hover {
+    font-size: 14px;
+  }
+  body main #grid-container {
+    border: 4px dotted blue;
+    grid-template-columns: 1fr;
+    gap: 10px 10px;
+  }
+  body main #recipe {
+    width: 100%;
+  }
+  body main #recipe h1 {
+    font-size: 30px;
+  }
+  body main #recipe figure img {
+    width: 100%;
+  }
+  body main #recipe ul {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 80%;
+  }
+  body main #recipe ul li {
+    margin-left: 30px;
+  }
+  body footer .footer-links {
+    border: 4px dotted blue;
+  }
+  body footer .footer-links a {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
