@@ -55,6 +55,22 @@
                     }
                 }
             }
+
+            //About
+            #about-section{
+
+                p{
+                    line-height: 2em;
+                }
+                .about-container{
+                    grid-template-columns: 1fr;
+
+                    .about-heading{
+                        margin-top: 20px;
+                    }
+                }
+            }
+
         }
 
         footer{

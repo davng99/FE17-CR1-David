@@ -7,7 +7,7 @@ header .header-top {
   padding: 10px;
 }
 header .header-top img {
-  width: 80px;
+  width: 100px;
 }
 header .header-top .icon-left input {
   height: 35px;
@@ -52,6 +52,8 @@ main #grid-container {
 main #grid-container .item {
   position: relative;
   transition: ease-in-out 0.3s;
+  border-radius: 20px;
+  overflow: hidden;
 }
 main #grid-container .item:hover {
   transform: scale(1.05);
@@ -87,6 +89,7 @@ main #recipe figure {
 }
 main #recipe figure img {
   width: 70%;
+  border-radius: 20px;
 }
 main #recipe figure figcaption {
   text-align: center;
@@ -107,6 +110,31 @@ main #recipe ul li p {
 }
 main #recipe ul li p span {
   font-weight: 700;
+}
+main #about-section {
+  padding: 0 40px;
+}
+main #about-section p {
+  line-height: 2.5em;
+}
+main #about-section .about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+main #about-section .about-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main #about-section .about-container .about-heading {
+  padding: 20px;
+}
+main #about-section .about-container .about-heading h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -179,6 +207,15 @@ body {
   }
   body main #recipe ul li {
     margin-left: 30px;
+  }
+  body main #about-section p {
+    line-height: 2em;
+  }
+  body main #about-section .about-container {
+    grid-template-columns: 1fr;
+  }
+  body main #about-section .about-container .about-heading {
+    margin-top: 20px;
   }
   body footer .footer-links a {
     font-size: 12px;
