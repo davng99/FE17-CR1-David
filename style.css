@@ -118,16 +118,17 @@ main #about-section p {
   line-height: 2.5em;
 }
 main #about-section .about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
 }
-main #about-section .about-container img {
-  height: 100%;
+main #about-section .about-container .img-container {
+  margin: 0 auto;
+}
+main #about-section .about-container .img-container img {
+  height: 400px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 main #about-section .about-container .about-heading {
   padding: 20px;
@@ -173,7 +174,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   body header .header-top .icon-left input {
     height: 25px;
     width: 150px;
@@ -211,13 +212,21 @@ body {
   body main #about-section p {
     line-height: 2em;
   }
-  body main #about-section .about-container {
-    grid-template-columns: 1fr;
-  }
   body main #about-section .about-container .about-heading {
     margin-top: 20px;
   }
   body footer .footer-links a {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 876px) {
+  body main #about-section p {
+    line-height: 2em;
+  }
+  body main #about-section .about-container {
+    grid-template-columns: 1fr;
+  }
+  body main #about-section .about-container .about-heading {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

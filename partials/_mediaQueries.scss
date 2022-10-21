@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     body{
         header{
     
@@ -63,7 +63,6 @@
                     line-height: 2em;
                 }
                 .about-container{
-                    grid-template-columns: 1fr;
 
                     .about-heading{
                         margin-top: 20px;
@@ -79,6 +78,29 @@
                     font-size: 12px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 876px) {
+    body{
+    
+        main{
+            //About
+            #about-section{
+
+                p{
+                    line-height: 2em;
+                }
+                .about-container{
+                    grid-template-columns: 1fr;
+
+                    .about-heading{
+                        margin-top: 20px;
+                    }
+                }
+            }
+
         }
     }
 }
